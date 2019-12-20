@@ -25,7 +25,7 @@ if mydb:
 mycursor = mydb.cursor(buffered=True)
 
 # # Create SQL Schema ==========================================
-f = open('./ec_universe_20190531.csv', 'r')
+f = open('test_data/sn_buy_rated.csv', 'r')
 reader = csv.reader(f)
 
 longest, headers, type_list = [], [], []
