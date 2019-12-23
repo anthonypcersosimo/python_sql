@@ -33,7 +33,7 @@ mycursor = mydb.cursor(buffered=True)
 # EC Stifel Value 12
 # EC Stifel Growth 12
 
-mycursor.execute(f'SELECT last_known_ticker, record_date, fset_perm_id FROM {table_name} WHERE mpt_class LIKE "%G%"')
+mycursor.execute(f'SELECT * FROM {table_name} WHERE mpt_class LIKE "%V%" LIMIT 30')
 
 result = mycursor.fetchall()
 
@@ -42,6 +42,7 @@ df = pd.DataFrame.from_records(
     columns=[i[0] for i in mycursor.description]
 )
 
-# print(df)
+df['mvd_sector_rank'] = df.groupby('gics_sector')['mean_valuation_deviation'].rank(ascending=False)
+print(df)
 
-df.to_csv(r"C:\Users\Anthony's Razer\Desktop\Repositories\python_sql\test_data\sn_buy_growth.csv")
+# df.to_csv(r"C:\Users\Anthony's Razer\Desktop\Repositories\python_sql\csv\sn_buy_value.csv")
