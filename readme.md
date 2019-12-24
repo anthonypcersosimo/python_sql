@@ -24,7 +24,7 @@ In my limited experience I've coded in JavaScript, C, HTML-CSS (both non-logical
 All of these languages but one have a major drawback, to beginners the code looks like an alien language. Python
 is written in what looks like the english language. This means you can start creating faster!!!
 
-![Python scripting demo](https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiu5ZKDo83mAhWKhOAKHdMFDF0QjRx6BAgBEAQ&url=https%3A%2F%2Fgiphy.com%2Fexplore%2Fpythons&psig=AOvVaw26oIzXV9nw4I_scSjUt233&ust=1577242115881406)
+![Python scripting demo](https://media1.giphy.com/media/UcqqD8j0N1rAk/giphy.gif)
 
 ## About ECS & Our Data
 
