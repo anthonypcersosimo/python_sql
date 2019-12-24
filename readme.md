@@ -5,7 +5,7 @@ using Python. This repo will be the central hub for learning how to manipulate e
 MS Excel. 
 
 The genesis behind this initiative was to re-invent data storage and visualization now that our enterprise has hit a key
-personal milestone: **35 million data points!**
+personal milestone: **150 million data points!**
 
 ![Hooray GIF!](https://media2.giphy.com/media/MTclfCr4tVgis/giphy.gif)
 
