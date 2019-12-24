@@ -11,7 +11,7 @@ personal milestone: 35 million data points.
 
 * 180,000kb file sizes are pretty hard to manipulate and open in memory along with multiple other apps
 * In order to grab only certain fields you need from a larger dataset, you HAVE to read into the entire sheet
-** (This is like 'SELECT * FROM foo' when you only want one field, it makes no sense to display all data if not desired)
+* (This is like 'SELECT * FROM foo' when you only want one field, it makes no sense to display all data if not desired)
 * And speaking of that last point, you cant grab data without rendering it to the screen! Annoying!
 
 ### Why Python?
