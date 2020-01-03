@@ -21,7 +21,7 @@ For a smaller buy-side RIA, this is a big deal! Our data spans 19 years and grow
 ### Why Python?
 
 In my limited experience I've coded in JavaScript, C, HTML-CSS (both non-logical) and Python.
-All of these languages but one have a major drawback, to beginners the code looks like an alien language. Python
+All of these languages but one have a major drawback: to beginners the code looks like an alien language. Python
 is written in what looks like the english language. This means you can start creating faster!!!
 
 ![Python scripting demo](https://media1.giphy.com/media/UcqqD8j0N1rAk/giphy.gif)
