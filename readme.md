@@ -37,6 +37,6 @@ Fields include price, 52wk hi and lo, valuation fields, relative strength fields
 Within the test_data folder, the file `gmas.py` is to become the most critical template of this initiative. GMAS stands for GRAB-MANIPULATE-AND-SAVE. These are the primary steps that our gata will go through once it's scrubbed and transitioned into MySQL.
 
 ### The GMAS:
-![Code Example](/gmas.png)
+![Code Example](/assets/gmas.png)
 
 The GMAS will be supported by the file `masterQuery.py` in the 'queries' folder within 'test_data.' This file has searchable key-words that will allow me to grab and copy-pasta queries for certain files we create. The critera for sorting and filtering our data to create certian lists remains the same over time.
