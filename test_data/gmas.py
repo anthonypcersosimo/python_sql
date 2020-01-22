@@ -39,5 +39,7 @@ df = pd.DataFrame.from_records(
     columns=[i[0] for i in mycursor.description]
 )
 
+# print(df)
+
 # Save dataframe to CSV format
 # df.to_csv(r"C:\Users\Anthony's Razer\Desktop\Repositories\python_sql\csv\example.csv")

@@ -18,19 +18,20 @@ For a smaller buy-side RIA, this is a big deal! Our data spans 19 years and grow
     * (This is like 'SELECT * FROM foo' when you only want one field, it makes no sense to display all data if not desired)
 * And speaking of that last point, you can't grab data without rendering it to the screen in Excel! Annoying!
 
+TLDR: Most of the work we do involves grabbing a mass of data saved in some Excel file, pasting it into a seperate excel instance, manipulating it and saving it somewhere. This is incredibly RAM intensive and excel is prone to crashes. Excel is a necessary evil, and I'm over it.
+
 ### Why Python?
 
-In my limited experience I've coded in JavaScript, C, HTML-CSS (both non-logical) and Python.
-All of these languages but one have a major drawback: to beginners the code looks like an alien language. Python
-is written in what looks like the english language. This means you can start creating faster!!!
+In my limited experience I've coded in JavaScript, C, HTML-CSS (both non-logical) and Python. All of these languages but one have a major drawback: to beginners the code looks like an alien language. Python is written in what looks like the english language. This means you can start creating faster!!!
 
 ![Python scripting demo](https://media1.giphy.com/media/UcqqD8j0N1rAk/giphy.gif)
 
 ## About ECS & Our Data
 
-At EquityCompass, our data enterprise houses equity market data that aggreagates monthly as-of, as-reported stock data. 
-We tagrget coverage of the Russell 3000 and the S&P 500. Our data is updated as-of the last day of the month and includes
-obsolete securities. We currently aggregate data on 206 unique fields for each security, less eight fields which are identifiers.
+At EquityCompass, our data enterprise houses equity market data that aggreagates monthly as-of, as-reported stock data. We tagrget coverage of the Russell 3000 and the S&P 500. Our data is updated as-of the last day of the month and includes obsolete securities. We currently aggregate data on 206 unique fields for each security, less eight fields which are identifiers.
 
-Fields include price, 52wk hi and lo, valuation fields, relative strength fields, sector data and proprietary metrics. We currently do not
-publish our data, nor do we have plans to sell our data via an API.
+Fields include price, 52wk hi and lo, valuation fields, relative strength fields, sector data, fundamental data, index membership data and LOTS of proprietary metrics. We currently do not publish our data publicly, nor do we have plans to sell our data via an API.
+
+## About This Repo
+
+Within the test_data folder, the file `gmas.py` is to become the most critical template of this initiative. GMAS stands for GRAB-MANIPULATE-AND-SAVE. These are the primary steps that our gata will go through once it's scrubbed and transitioned into MySQL. The GMAS will be supported by the file `masterQuery.py` in the 'queries' folder within 'test_data.' This file has searchable key-words that will allow me to grab and copy-pasta queries for certain files we create. The critera for sorting and filtering our data to create certian lists remains the same over time.
