@@ -34,7 +34,7 @@ Fields include price, 52wk hi and lo, valuation fields, relative strength fields
 
 ## About This Repo
 
-Within the test_data folder, the file `gmas.py` is to become the most critical template of this initiative. GMAS stands for GRAB-MANIPULATE-AND-SAVE. These are the primary steps that our gata will go through once it's scrubbed and transitioned into MySQL.
+Within the test_data folder, the file `gmas.py` is to become the most critical template of this initiative. GMAS (Pronounced: G-mass) stands for GRAB-MANIPULATE-AND-SAVE. These are the primary steps that our gata will go through once it's scrubbed and transitioned into MySQL.
 
 ### The GMAS:
 ![Code Example](assets/gmas.PNG)

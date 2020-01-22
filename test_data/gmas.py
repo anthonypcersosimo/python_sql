@@ -33,7 +33,7 @@ mycursor.execute(query)
 
 result = mycursor.fetchall()
 
-# Create data frame from resul
+# Create data frame from result
 df = pd.DataFrame.from_records(
     result,
     columns=[i[0] for i in mycursor.description]
