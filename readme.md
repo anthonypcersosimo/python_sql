@@ -28,9 +28,13 @@ In my limited experience I've coded in JavaScript, C, HTML-CSS (both non-logical
 
 ![Python scripting demo](https://media1.giphy.com/media/UcqqD8j0N1rAk/giphy.gif)
 
-## About ECS & Our Data
+Python has great statistical and visualization libraries and works well with any modern O/RDBMS, NoSQL or Non Relational DMBS.
 
-At EquityCompass, our data enterprise houses equity market data that aggreagates monthly as-of, as-reported stock data. We tagrget coverage of the Russell 3000 and the S&P 500. Our data is updated as-of the last day of the month and includes obsolete securities. We currently aggregate data on 206 unique fields for each security, less eight fields which are identifiers.
+## About EquityCompass & Our Data
+
+At EquityCompass, our data enterprise houses as-of, as-reported equity market data that we aggregate monthly. We target coverage of the Russell 3000 and the S&P 500. Our data is updated as-of the last day of the month and includes obsolete securities going back to 2001. We currently aggregate data on 206 unique fields for each security, less eight fields which are identifiers.
+
+Each month we exand our data by 3,100 securities x 206 fields = 638,600 data points.
 
 Fields include price, 52wk hi and lo, valuation fields, relative strength fields, sector data, fundamental data, index membership data and LOTS of proprietary metrics. We currently do not publish our data publicly, nor do we have plans to sell our data via an API.
 
