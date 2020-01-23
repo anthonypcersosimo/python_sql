@@ -6,3 +6,6 @@
 secret.*
 *.csv
 *.xlsx
+
+# Directories
+model_run/
