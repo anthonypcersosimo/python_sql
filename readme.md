@@ -16,7 +16,7 @@ For a smaller buy-side RIA, this is a big deal! Our data spans 19 years and grow
 * Humans are ill-equipped to quantify and model volumes of complex unstructured information into predictive insights
 * As a consequence, decision makers miss valuable insights buried in the complexity and make their decisions on incomplete and biased analysis
 * As it relates to our current SOP, 180mb excel files are hard/impossible to manipulate in memory along with multiple other desktop apps
-* In order to grab only certain fields you need from a larger dataset, you HAVE to read into the entire sheet
+* In order to grab only certain fields from a larger dataset, you HAVE to read into the entire sheet
     * (This is like 'SELECT * FROM foo' when you only want one field, it makes no sense to display all data if not desired)
 * And speaking of that last point, you can't grab data without rendering it to the screen in Excel! Annoying!
 
