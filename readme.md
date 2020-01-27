@@ -4,7 +4,7 @@ Welcome! This repo contains basic CRUD functions along with some data manipulati
 using Python. This repo will be the central hub for learning how to manipulate equity data using code instead of cumbersome
 MS Excel. 
 
-The genesis behind this initiative was to re-invent our data storage due to increasingly cumbersome MS Excel based methods. Data storage and retrieval in Excel drains massive amounts of resources and takes far too much time. This is especially true considering our time series data continues to scale into the future.
+The genesis behind this initiative was to re-invent our data storage due to increasingly archaic MS Excel based methods. Data storage and retrieval in Excel drains massive amounts of resources and takes far too much time. This is especially true considering our time series data continues to scale into the future.
 
 For a smaller buy-side RIA, this is a big deal. Our data spans 19 years and grows every month.
 
