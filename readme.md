@@ -17,7 +17,7 @@ For a smaller buy-side RIA, this is a big deal. Our data spans 19 years and grow
     * (This is like 'SELECT * FROM foo' when you only want one field, it makes no sense to display all data if not desired)
 * And speaking of that last point, you can't grab data without rendering it to the screen in Excel! Annoying!
 
-TLDR: Most of the work we do involves grabbing a mass of data saved in some Excel file, pasting it into a seperate excel instance, manipulating it and saving it somewhere. This is incredibly RAM intensive and excel is prone to crashes. Excel is a necessary evil, and I'm over it.
+TLDR: Most of the work we do involves grabbing a mass of data saved in some Excel file, pasting it into a seperate excel instance, manipulating it and saving it somewhere. This is incredibly RAM intensive and excel is prone to crashes.
 
 ### Why Python?
 
