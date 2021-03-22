@@ -9,10 +9,10 @@ if f.mode == "r":
 mydb = mysql.connector.connect(
     host='127.0.0.1',
     port='3306',
-    db='stocks',
+    db='python',
     use_unicode='true',
-    username='root',
-    passwd=secret
+    user='root',
+    password=secret
 )
 print(mydb)
 table_name = 'russell3000'
