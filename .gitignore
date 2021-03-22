@@ -9,3 +9,6 @@ secret.*
 
 # Directories
 model_run/
+historical_data/
+portfolio_mgmt/
+tools/
