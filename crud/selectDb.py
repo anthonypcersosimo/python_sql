@@ -15,7 +15,7 @@ mydb = mysql.connector.connect(
     password=secret
 )
 print(mydb)
-table_name = 'russell3000'
+table_name = 'master_tickets'
 
 # Create a cursor (an instance) to manipulate your SQL Database
 mycursor = mydb.cursor(buffered=True)
@@ -27,18 +27,18 @@ mycursor = mydb.cursor(buffered=True)
 
 # # SELECT DATA FROM DATABASE ===========================
 # Select all the data from a table
-print('Select all the data from a table')
-mycursor.execute('SELECT * FROM ' + table_name)
+# print('Select all the data from a table')
+# mycursor.execute('SELECT * FROM ' + table_name)
 
-store_result = mycursor.fetchall()
+# store_result = mycursor.fetchall()
 
-for x in store_result:
-    print(x)
-print('==================================================')
+# for x in store_result:
+#     print(x)
+# print('==================================================')
 
 # Select all data from specific columns
 print('Select all data from specific columns')
-mycursor.execute('SELECT Ticker, Price FROM ' + table_name)
+mycursor.execute('SELECT ticker, notes FROM ' + table_name + ' LIMIT 10')
 
 select_all_result = mycursor.fetchall()
 
@@ -59,7 +59,7 @@ print('==================================================')
 
 # Selecting data WHERE (some clause)
 print('Selecting data WHERE (some clause)')
-select_query = 'SELECT * FROM ' + table_name + ' WHERE Sector = "Gas"'
+select_query = 'SELECT * FROM ' + table_name + ' WHERE snam = "ZCCFI"'
 
 mycursor.execute(select_query)
 
@@ -73,7 +73,7 @@ print('==================================================')
 # Select records from column where items CONTAIN (params)
 print('Select records from column where items CONTAIN (params)')
 select_params_query = ('SELECT * FROM ' + table_name +
-                       ' WHERE Sector LIKE "%als%"')
+                       ' WHERE ticker LIKE "%aa%"')
 
 mycursor.execute(select_params_query)
 
