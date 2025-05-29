@@ -12,3 +12,7 @@
 # # Group By
 # df['mvd_sector_rank'] = df.groupby('gics_sector')['mean_valuation_deviation'].rank(ascending=False)
 
+# # Find the average price by Sector --GMAs
+# column = 'Sector'
+# avg_sector_px = df.groupby(column)['Price'].mean()
+# print(avg_sector_px)
