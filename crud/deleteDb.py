@@ -1,4 +1,3 @@
-import sqlite3
 import mysql.connector
 print('connected!')
 
@@ -7,12 +6,10 @@ if f.mode == "r":
     secret = f.read() 
 
 mydb = mysql.connector.connect(
-    host='127.0.0.1',
-    port='3306',
-    db='python',
-    use_unicode='true',
     user='root',
-    password=secret
+    password=secret,
+    host='127.0.0.1',
+    database='python'
 )
 print(mydb)
 table_name = 'russell3000'
@@ -21,16 +18,16 @@ table_name = 'russell3000'
 mycursor = mydb.cursor(buffered=True)
 
 # Print a list of all avail databases for given PORT and HOST above
-# mycursor.execute('SHOW DATABASES')
-# for x in mycursor:
-#     print(x)
+mycursor.execute('SHOW DATABASES')
+for x in mycursor:
+    print(x)
 
-# # DELETE DATA FROM DATABASE ===========================
+# DELETE DATA FROM DATABASE ===========================
 # Delete data from a table where (params)
-record_to_delete = 'AA'
-query = f'DELETE FROM {table_name} WHERE Ticker = "{record_to_delete}"'
+# record_to_delete = 'AA'
+# query = f'DELETE FROM {table_name} WHERE Ticker = "{record_to_delete}"'
 
-mycursor.execute(query)
+# mycursor.execute(query)
 
 mydb.commit()
 

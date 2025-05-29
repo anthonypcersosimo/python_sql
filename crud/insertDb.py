@@ -1,4 +1,3 @@
-import sqlite3
 import mysql.connector
 print('connected!')
 
@@ -7,12 +6,10 @@ if f.mode == "r":
     secret = f.read() 
 
 mydb = mysql.connector.connect(
-    host='127.0.0.1',
-    port='3306',
-    db='python',
-    use_unicode='true',
     user='root',
-    password=secret
+    password=secret,
+    host='127.0.0.1',
+    database='python'
 )
 print(mydb)
 table_name = 'russell3000'
@@ -26,7 +23,7 @@ mycursor = mydb.cursor(buffered=True)
 #     print(x)
 
 # Creating a table in the database
-mycursor.execute('DROP TABLE russell3000')
+# mycursor.execute('DROP TABLE russell3000')
 mycursor.execute(
     'CREATE TABLE russell3000 (Ticker VARCHAR(255), Company_Name VARCHAR(255), Price INT, Sector VARCHAR(255), EC_Unique INT PRIMARY KEY)')
 

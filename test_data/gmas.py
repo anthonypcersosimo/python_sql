@@ -1,6 +1,4 @@
 # # GMAS STANDS FOR GRAB-MANIPULATE-AND-SAVE !!
-
-import sqlite3
 import pandas as pd
 import mysql.connector
 print('connected!')
@@ -10,12 +8,10 @@ if f.mode == "r":
     secret = f.read()
 
 mydb = mysql.connector.connect(
-    host='127.0.0.1',
-    port='3306',
-    db= 'python',
-    use_unicode='true',
     user='root',
-    password=secret
+    password=secret,
+    host='127.0.0.1',
+    database='python'
 )
 print(mydb)
 

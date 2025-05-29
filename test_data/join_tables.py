@@ -12,12 +12,10 @@ if f.mode == "r":
 # Use table name
 db_name = 'ecs_downloads'
 mydb = mysql.connector.connect(
+    user='root',
+    password=secret,
     host='127.0.0.1',
-    port='3306',
-    db=db_name,
-    use_unicode='true',
-    username='root',
-    passwd=secret
+    database='python'
 )
 print(mydb)
 
