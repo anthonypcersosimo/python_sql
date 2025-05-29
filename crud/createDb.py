@@ -25,10 +25,10 @@ mycursor = mydb.cursor(buffered=True)
 
 # # Create New Database
 
-# mycursor.execute(f'CREATE DATABASE {db_name}')
-# mycursor.execute('SHOW DATABASES')
-# for x in mycursor:
-#     print(x)
+mycursor.execute(f'CREATE DATABASE {db_name}')
+mycursor.execute('SHOW DATABASES')
+for x in mycursor:
+    print(x)
 
 drop_query = f'DROP TABLE IF EXISTS {table_name}'
 create_query = f'CREATE TABLE {table_name} (snam CHAR(20) NOT NULL, trade_order CHAR(20), ticker CHAR(10))'
